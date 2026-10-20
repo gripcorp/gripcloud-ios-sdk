@@ -1,7 +1,7 @@
 # GripCloud iOS SDK
 
 <!-- gripcloud-latest-version:start -->
-## Latest Version: `1.0.0`
+## Latest Version: `1.1.0`
 <!-- gripcloud-latest-version:end -->
 
 GripCloud iOS SDK는 iOS 앱에서 GripCloud 라이브/VOD 플레이어를 사용할 수 있도록 제공되는 SDK입니다.
@@ -47,7 +47,7 @@ CocoaPods 중앙 저장소(trunk)에 등록되어 있지 않으므로 `:podspec`
 `Podfile`에 다음 dependency를 추가합니다.
 
 ```ruby
-pod 'GripCloudSDK', :podspec => 'https://repo.gripcloud.show/binary/ios/1.0.0/GripCloudSDK.podspec'
+pod 'GripCloudSDK', :podspec => 'https://repo.gripcloud.show/binary/ios/1.1.0/GripCloudSDK.podspec'
 ```
 
 버전을 올릴 때는 주소의 버전을 바꾸고 `pod update GripCloudSDK` 를 실행합니다 — SPM 의 `from:` 과 달리 버전이 고정이라 자동으로 올라가지 않습니다.

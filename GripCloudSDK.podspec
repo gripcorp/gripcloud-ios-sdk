@@ -1,14 +1,10 @@
-#
-# Be sure to run `pod lib lint TestLiveKit.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
-#
+# GripCloudSDK podspec 원본. 고객사는 이 파일이 아니라 release.sh 가 candidate 에서만 s.source 를
+# S3 ZIP 주소(+ sha256)로 바꾼 사본을 `:podspec` 으로 받는다 — 여기 s.source 는 git 태그를 가리킨다.
+# s.version 이 버전의 기준이다(release.sh · check-version-consistency.sh 가 정규식으로 읽는다).
 
 Pod::Spec.new do |s|
   s.name             = 'GripCloudSDK'
-  s.version          = '1.0.0'
+  s.version          = '1.1.0'
   s.summary          = 'GripCloud iOS SDK — Live/VOD hybrid player with native AVPlayer and WKWebView.'
 
   s.description      = <<-DESC
@@ -19,14 +15,13 @@ Pod::Spec.new do |s|
                        DESC
 
   s.homepage         = 'https://www.gripcloud.show'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'Copyright', :text => <<-LICENSE
-                          Copyright 2024 All Rights Reserved By GripCloud
+                          Copyright 2024-2026 GripCloud. All Rights Reserved.
+                          Use of this software is permitted only under a license agreement with GripCloud.
                           LICENSE
                         }
-  s.author           = { 'hyunsoo1015' => 'hyunsoo@gripcorp.co' }
-  s.source           = { :http => "https://repo.gripcloud.show/binary/ios/1.0.0/GripCloudSDK.xcframework.zip", :type => :zip, :sha256 => "af3b7eaa78b7cd9e4a4495801ca9e64f027b412f7b9e42c8be09b2ee6c7e4087" }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author           = 'GripCloud'
+  s.source           = { :http => "https://repo.gripcloud.show/binary/ios/1.1.0/GripCloudSDK.xcframework.zip", :type => :zip, :sha256 => "843d00a68c70f4c85b8b8cee3d0e07aaf50159c341dee97e37ef2ee9e3375b85" }
   s.vendored_frameworks = 'GripCloudSDK.xcframework'
   s.platform = :ios
   s.swift_version = "5.7"
