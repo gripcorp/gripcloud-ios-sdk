@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
                           LICENSE
                         }
   s.author           = 'GripCloud'
-  s.source           = { :http => "https://repo.gripcloud.show/binary/ios/1.1.0/GripCloudSDK.xcframework.zip", :type => :zip, :sha256 => "6c831dbf0cb2d629ebb45f7b33e500d228fba51ad3a659ed3065dce4b38ad650" }
+  s.source           = { :http => "https://repo.gripcloud.show/binary/ios/1.1.0/GripCloudSDK.xcframework.zip", :type => :zip, :sha256 => "1480b1e1542285dcc11311c356dd532d163f178778c6bf1b3b4276a7b5e7b5d3" }
   s.vendored_frameworks = 'GripCloudSDK.xcframework'
   s.platform = :ios
   s.swift_version = "5.7"
